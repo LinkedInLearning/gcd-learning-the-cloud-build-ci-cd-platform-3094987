@@ -1,0 +1,11 @@
+steps:
+
+# install the npm package
+- name: node
+  entrypoint: npm
+  args: ['install']
+
+# deploy to App Engine
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud app deploy']
