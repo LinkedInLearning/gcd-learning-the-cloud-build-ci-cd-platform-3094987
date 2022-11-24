@@ -1,0 +1,4 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud functions deploy hello-world --source . --gen2 --region us-central1 --trigger-http --runtime=nodejs16 --allow-unauthenticated']
