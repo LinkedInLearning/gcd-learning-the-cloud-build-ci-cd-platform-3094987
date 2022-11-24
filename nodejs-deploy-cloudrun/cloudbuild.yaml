@@ -1,0 +1,5 @@
+steps:
+# deploy to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud run deploy hello-world --source . --allow-unauthenticated --region us-central1']
