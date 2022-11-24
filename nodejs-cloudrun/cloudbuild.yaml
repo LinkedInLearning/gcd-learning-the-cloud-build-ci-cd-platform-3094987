@@ -1,13 +1,5 @@
 steps:
-# Build the container image
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/gcloud-build-demo/demo-image', '.']
-# Push the container image to Container Registry
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/gcloud-build-demo/demo-image']
-# Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: gcloud
-  args: ['run', 'deploy', 'nodejs-cloudrun', '--image', 'gcr.io/gcloud-build-demo/demo-image', '--region', 'us-central1']
-images:
-- gcr.io/gcloud-build-demo/demo-image
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud run deploy hello-world-service --source . --allow-unauthenticated --region us-central1']
+timeout: '1600s'
