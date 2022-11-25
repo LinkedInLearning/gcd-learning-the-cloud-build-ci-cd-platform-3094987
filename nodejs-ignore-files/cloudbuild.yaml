@@ -1,0 +1,4 @@
+steps:
+- name: node
+  entrypoint: npm
+  args: ['install']
