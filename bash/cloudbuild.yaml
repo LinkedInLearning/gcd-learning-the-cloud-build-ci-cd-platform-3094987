@@ -1,0 +1,4 @@
+steps:
+# run a custom script as a build step
+- name: 'bash'
+  args: ['./custom-script.bash']
