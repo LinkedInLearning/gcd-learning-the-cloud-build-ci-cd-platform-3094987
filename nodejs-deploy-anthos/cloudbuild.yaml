@@ -1,5 +1,0 @@
-steps:
-# deploy to Cloud Run for Anthos
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: 'bash'
-  args: ['-c', 'gcloud run deploy hello-world --source . --platform gke --cluster hello-world-cluster --cluster-location us-central1']
