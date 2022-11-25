@@ -1,0 +1,3 @@
+steps:
+  - name: gcr.io/firebase-demo-deploy/firebase
+    args: ['deploy', '--project=firebase-demo-deploy']
