@@ -22,9 +22,11 @@ To resolve this issue:
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
+   - Node and npm, Python, or Java (depending on the exercise files)
+   - [gcloud](https://cloud.google.com/sdk/docs/install-sdk) command-line tool (to use with a Google Cloud Platform account)
+
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+3. This repository is designed to be used alongside the LinkedIn Learning course: [Google Cloud for Developers: Learning the Cloud Build CI/CD Platform][lil-course-url]. Please refer to the course for more guidance.
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
