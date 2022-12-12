@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello World with Cloud Build and Cloud Run and Artifact Registry');
+  res.send('Hello World with Cloud Build and Cloud Run');
 });
 
 const port = parseInt(process.env.PORT) || 8080;
