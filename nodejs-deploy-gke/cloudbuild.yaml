@@ -1,15 +1,15 @@
 steps:
   # build the container image
 - name: "gcr.io/cloud-builders/docker"
-  args: ["build", "-t", "gcr.io/gcloud-demo-gke/image:tag", "."]
+  args: ["build", "-t", "gcr.io/gcloud-demo-deploy/image:tag", "."]
   # push container image
 - name: "gcr.io/cloud-builders/docker"
-  args: ["push", "gcr.io/gcloud-demo-gke/image:tag"]
+  args: ["push", "gcr.io/gcloud-demo-deploy/image:tag"]
   # deploy container image to GKE
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
   - run
   - --filename=deployment.yaml
-  - --image=gcr.io/gcloud-demo-gke/image:tag
+  - --image=gcr.io/gcloud-demo-deploy/image:tag
   - --location=us-central1
   - --cluster=hello-world-cluster
