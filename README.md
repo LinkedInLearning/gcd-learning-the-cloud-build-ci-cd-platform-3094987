@@ -1,7 +1,14 @@
 # Google Cloud for Developers: Learning the Cloud Build CI/CD Platform
-This is the repository for the LinkedIn Learning course `Google Cloud for Developers: Learning the Cloud Build CI/CD Platform`. The full course is available from [LinkedIn Learning][lil-course-url].
+This is the repository for the LinkedIn Learning course Google Cloud for Developers: Learning the Cloud Build CI/CD Platform. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
+![Google Cloud for Developers: Learning the Cloud Build CI/CD Platform][lil-thumbnail-url] 
+
+The Google Cloud Platform has so many tools it’s hard to keep track. One of the most interesting but less talked about is Cloud Build—designed to offer a game-changing experience for developers. In this course, instructor Xian Ke shows you the basics of using Google Cloud Build for building, testing, deploying, and managing code on a serverless CI/CD platform.
+
+Get an overview of how Cloud Build fits within the larger Google Cloud Platform to better understand the overall development process. Learn to package code with GitHub repos, Docker containers, and artifacts in Node.js, Java, and Python. Test your apps along the way for functionality to get them ready for successful deployment. Find out how to deploy code to the Google App Engine, Cloud Run, Kubernetes, Cloud Functions, Firebase, and more. Upon completing this course, you’ll be ready to leverage all the features of Cloud Build for building your own applications.
+
+
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -20,17 +27,16 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-   - Node and npm, Python, or Java (depending on the exercise files)
-   - [gcloud](https://cloud.google.com/sdk/docs/install-sdk) command-line tool (to use with a Google Cloud Platform account)
 
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. This repository is designed to be used alongside the LinkedIn Learning course: [Google Cloud for Developers: Learning the Cloud Build CI/CD Platform][lil-course-url]. Please refer to the course for more guidance.
+### Instructor
 
+Xian Ke 
+                            
+Technology Consultant
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+                            
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/xian-ke).
 
+[lil-course-url]: https://www.linkedin.com/learning/google-cloud-for-developers-learning-the-cloud-build-ci-cd-platform?dApp=59033956
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/C560DAQEuXwmPFez8iw/learning-public-crop_675_1200/0/1675730064836?e=2147483647&v=beta&t=7yYc6THNpsb0G5MH5yF4xN-zpqQ8eH_aa5ZznFMDIuA
